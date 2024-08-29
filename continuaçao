@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head><!--cabeçalho-->
+</head>
+<title>primeiro pagina web </title>
+<body>
+    Analise e Desenvolvimento de Sistemas
+    
+    <body background="c:\Users\Arklok\Documents\index.html\f8wbgcrxyaap3ka.webp">
+<h1>fasf luz</h1><!--tamanho-->
+<h2>2º periodo</h2>
+<h3>prof stella</h3>
+
+ <p align = "center"> <b> <font color="blue" face="arial" size="10">Boa pa nos </font></b>
+ <font color="blue" face="arial" size="8"> estudar- depois de comer
+ </font>
+
+ <ol>
+    <ul><b><font color="red" face="arial" size="10">Produtos  </font>
+    <li>Notebook</li>
+   <li>Mouse</li>
+   <li>Teclado</li>
+   <li>Monitor</li>
+ </ol>
+
+ <ul><b><font color="white" face="arial" size="10">Marcas  </font>
+ </ul>
+ <ul><b><font color="red" face="arial" size="10"></font>
+  
+    <ol>     
+    <li>Macbok-Apple</li>
+    <li>Razer</li>
+    <li>Logitegh</li>
+    <li>Alienware</li>
+  
+</ol>
+<h1>Como desenhar</h1><br>
+<p align = "center"><img src = "Como-desenhar-o-Luffy-passo-a-passo.jpg"  
+widht ="100" height="300"></p>
+<h1>Clique no link para acessar meu web site</h1>
+<h2><a href="www.google.com.br">meu site</a></h2>
+
+
+</body>
+
+
+
+</html>
