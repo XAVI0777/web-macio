@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <table border="1" width = "80%" align="center"> 
+   <caption> <font color = "blue" size =12> Animais para adoção</font></caption>
+
+    <td colspan="3"align="center"> <font size="4" >Listagem de alunos</font></td>
+<tr>
+   <th width = "20%">Foto</th> width = "30%">Especificação</th><th width = "50%">Descrição</th>
+</tr>
+    <th>R.A</th><th>Nome</th><th>Endereço</th>
+</tr>
+
+<tr>
+    <td>12345</td><td>Xavi</td><td>RUA 99</td>
+</tr> 
+<tr>
+    <td>25479</td><td>PAlinho</td><td>Rua 95</td>
+</tr>
+<tr>
+    <td>8796</td><td>Savinho</td><td>Rua 44</td>
+</tr>       
+
+
+</table>
+
+</body>
+
+</html>
