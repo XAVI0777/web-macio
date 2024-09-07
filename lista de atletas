@@ -7,25 +7,25 @@
 </head>
 <body>
     
-    <table border="8" width = "80%" align="center"> 
+    <table border="18" width = "100%" align="center"> 
 
-    <td colspan="3"align="center"> <font size="4" >Lista de Atletas</font></td>
+    <td colspan="6"align="center"> <font size="10" >Lista de Atletas</font></td>
 <tr>
    <th width = "20%">Foto</th></th> </th><th width = "20%">Atletas </th> <th width = "20%">Nacionalidade</th><th width = "20%">Clube</th>
 </tr>
 
 <tr>
-    <td>  <img src = "usuario peq.png" width="40%"></td><td>Gabriela</td><td>Peru</td></td><td>Cruzeiro</td>
+    <td>  <img src = "usuario peq.png" width="80%"></td><td>Gabriela</td><td>Peru</td></td><td>Cruzeiro</td>
 </tr>
 
 <tr>
-    <td> <img src = "usuario peq.png" width="40%"> </td><td>Xavi</td><td>Argentina</td></td><td>Cruzeiro</td>
+    <td> <img src = "usuario peq.png" width="80%"> </td><td>Xavi</td><td>Argentina</td></td><td>Cruzeiro</td>
 </tr> 
 <tr>
-    <td><img src = "usuario peq.png" width="40%"></td><td>Kelven</td><td>Brasil</td></td><td>Cruzeiro</td>
+    <td><img src = "usuario peq.png" width="80%"></td><td>Kelven</td><td>Brasil</td></td><td>Cruzeiro</td>
 </tr>
 <tr>
-    <td> <img src = "usuario peq.png" width="40%"></td><td>Savinho</td><td>EUA</td></td><td>Cruzeiro</td>
+    <td> <img src = "usuario peq.png" width="80%"></td><td>Savinho</td><td>EUA</td></td><td>Cruzeiro</td>
 </tr>       
 
 
