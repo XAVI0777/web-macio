@@ -4,6 +4,7 @@
     <!--Checkbox quadradinho sexos para marcar e desmarcar-->
      <!--br quebra de linhas pula para baixo-->
      <!--radio =bolinha-->
+     <!--textarea=cometario. rows=numero de linha. maxlength=limita a escrita -->
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
@@ -23,7 +24,10 @@
             <option>Fundamental</option>
             <option>Ensino Medio</option>
             <option>Ensino superior</option>
-        </select>
+        </select><br></br>
+        <textarea rows="10" cols="40" maxlength="140">Escreva</textarea>
+        
+
         
         
         <br></br>
@@ -34,8 +38,8 @@
         E-mail <input type ="checkbox" name ="email_pro">
         sms <input type = "checkbox" name ="sms_pro">
         Whatsapp <input type = "checkbox" name ="whats_pro">
-
-    </font>
+    </font><br><br>
+    <input type="button" value="Cadastrar">
 </form>
 </body>
 </html>
