@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <!--Size tamanho-->
+    <!--Checkbox quadradinho sexos para marcar e desmarcar-->
+     <!--br quebra de linhas pula para baixo-->
+     <!--radio =bolinha-->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Criando meu primeiro formulario</h1>
+    <form>
+       <font size = "4" face:"Arial">Nome: <input type = "text" name = "Nome" size ="60"> <br></br> 
+        Endereço: <input type = "text" name ="endereco" size = "40" maxlength="20"> <br></br>
+        Cidade: <input type = "text" name ="cidade" size = "40"> CEP:<input type = "text" name ="CEP" size = "40" value ="Digite apenas numeros"> <br></br> 
+        telefone:<input type = "text" name ="telefone" size = "40"> e-mail:<input type = "text" name ="email" size = "40"> <br></br>
+        senha:<input type ="password" size="8" name ="senha" > 
+        Escolaridade:
+        <select name="Escolaridade">
+            <option>Clique na Escolaridade</option>
+            <option>Fundamental</option>
+            <option>Ensino Medio</option>
+            <option>Ensino superior</option>
+        </select>
+        
+        
+        <br></br>
+        <b>sexo: </b>
+        <input type="radio" name="sexo" >Feminino
+        <input type="radio" name="sexo" >Masculino<br> 
+        Deseja receber promoções por:
+        E-mail <input type ="checkbox" name ="email_pro">
+        sms <input type = "checkbox" name ="sms_pro">
+        Whatsapp <input type = "checkbox" name ="whats_pro">
+
+    </font>
+</form>
+</body>
+</html>
