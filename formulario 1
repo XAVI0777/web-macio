@@ -40,6 +40,7 @@
         Whatsapp <input type = "checkbox" name ="whats_pro">
     </font><br><br>
     <input type="button" value="Cadastrar">
+<input type="reset" value="Limpar">
 </form>
 </body>
 </html>
