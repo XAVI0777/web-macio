@@ -1,0 +1,38 @@
+Estrutura CSS:
+body:
+
+font-family: Arial, sans-serif;: Define a fonte do corpo do documento.
+background-color: #f0f0f0;: Aplica um fundo cinza claro.
+display: flex; justify-content: center; align-items: center; height: 100vh;: Centraliza o conteúdo da página (formulário) vertical e horizontalmente, ocupando 100% da altura da janela do navegador.
+.form-container:
+
+background-color: #fff;: Define o fundo branco para a caixa do formulário.
+padding: 20px;: Adiciona espaçamento interno.
+border-radius: 10px;: Arredonda as bordas do contêiner do formulário.
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);: Adiciona uma leve sombra, criando um efeito de "cartão" elevado.
+width: 100%; max-width: 400px;: Define que o formulário pode ocupar 100% da largura disponível, mas com uma largura máxima de 400px.
+h2:
+
+text-align: center;: Centraliza o texto do título.
+margin-bottom: 20px;: Adiciona um espaçamento abaixo do título.
+label:
+
+display: block;: Faz com que os rótulos ocupem uma linha inteira acima dos campos de entrada.
+margin-bottom: 5px;: Adiciona um pequeno espaçamento abaixo de cada rótulo.
+font-weight: bold;: Deixa o texto dos rótulos em negrito para destacar os campos.
+input (para os tipos text, email e number):
+
+width: 100%;: Faz com que os campos ocupem toda a largura do contêiner.
+padding: 10px;: Adiciona espaçamento interno para tornar os campos maiores e mais fáceis de usar.
+border: 1px solid #ccc;: Define uma borda cinza clara ao redor dos campos.
+border-radius: 5px;: Arredonda as bordas dos campos para um design mais moderno.
+input[type="submit"]:
+
+background-color: #28a745;: Define uma cor verde para o botão de envio.
+color: white;: Faz com que o texto no botão seja branco.
+border: none;: Remove a borda padrão.
+border-radius: 5px;: Arredonda as bordas do botão.
+cursor: pointer;: Muda o cursor para um ícone de "mão", indicando que o botão é clicável.
+Efeito Hover no Botão:
+
+input[type="submit"]:hover: Altera a cor de fundo do bot
