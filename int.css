@@ -7,17 +7,13 @@
 </head>
 <body style="font-family: Arial, sans-serif; background-color: #f0f0f0; margin: 0; padding: 0;">
 
-    <!-- Cabeçalho -->
-    <header style="background-color: #4CAF50; padding: 20px; text-align: center; color: white;">
-        <h1 style="margin: 0;">Bem-vindo ao Meu Website</h1>
-    </header>
-
+   
     <!-- Conteúdo Principal -->
     <main style="padding: 20px; text-align: center;">
-        <h2 style="color: #333;">Está sou eu</h2>
+        <h2 style="color: #333;">Este sou eu</h2>
         <p style="font-size: 18px; line-height: 1.6;">
-           Professora Stella Dornelas
-           Mestre em Engenharia de Sistemas e Automação.
+            Gabriel Xavier
+           Atleta profissional.
         </p>
 
         <!-- Imagem com borda arredondada -->
@@ -38,4 +34,3 @@
 
 </body>
 </html>
-
