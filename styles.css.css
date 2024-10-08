@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Cabeçalho */
+header {
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navegação (menu) */
+nav {
+    margin: 20px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: blue;
+}
+
+/* Conteúdo principal */
+main {
+    margin: 20px;
+    padding: 20px;
+    background-color: antiquewhite;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+  
+    
+}
+
+div {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(255, 127, 148);
+    border-radius: 8px;
+    
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
