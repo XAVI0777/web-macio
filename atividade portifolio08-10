@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosso Portfólio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gabriel Xavier e Thiago Paz</h1>
+        <p>Desenvolvedores Web Júnior</p>
+    </header>
+    
+    <section class="container">
+        <div class="hobbies">
+            <h2>Hobbies e Interesses</h2>
+            <ul>
+                <li>Trabalhar</li>
+                <li>Estudar</li>
+                <li>Treinar</li>
+            </ul>
+        </div>
+
+        <div class="metas-sonhos">
+            <h2>Metas e Sonhos</h2>
+            <p>Como todo jovem programador sonhamos em ter uma carreira bem sucessida com grandes feitos e realizaçoes, como poder trabalhar em outro continente, poder proporcionar um conforto melhor para a familia, podendo realizar nossas atividades como atletas em si </p>
+        </div>
+
+        <div class="familia">
+            <h2>Família</h2>
+            <p>...</p>
+        </div>
+    </section>
+    
+    <section class="contato">
+        <h2>Contato</h2>
+        <p>Email: <a href="mailto:pessoa@email.com">gabrielxaviee@email.com</a></p>
+        <p>Email: <a href="mailto:pessoa@email.com">thiagopazdasilva6@email.com</a></p>
+        <p>Redes sociais: 
+            <a href="https://www.facebook.com">Facebook</a> | 
+            <a href="https://www.linkedin.com">LinkedIn</a> | 
+            <a href="https://www.instagram.com">Instagram</a>
+        </p>
+    </section>
+    
+    <footer>
+        <p>© 2024 Gabriel e Thiago. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: black;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Centraliza verticalmente */
+    padding: 20px;
+}
+
+
+.metas-sonhos {
+    text-align: center;
+}
+
+.hobbies {
+    text-align: left;
+}
+
+.familia {
+    text-align: right;
+}
+
+.contato {
+    text-align: center;
+    padding: 20px;
+    background: rgb(18, 18, 54);
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #cccccc;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #070616;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
