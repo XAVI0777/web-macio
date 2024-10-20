@@ -1,0 +1,134 @@
+#include <iostream>
+#include <string>
+#include <limits>
+
+const int MAXTAM = 100;
+
+struct Aluno {
+    std::string nome;
+};
+
+struct ListaAlunos {
+    Aluno alunos[MAXTAM];
+    int primeiro;
+    int ultimo;
+};
+
+void InicializaLista(ListaAlunos* lista) {
+    lista->primeiro = 0;
+    lista->ultimo = 0;
+}
+
+void InsereAluno(Aluno aluno, ListaAlunos* lista) {
+    if (lista->ultimo < MAXTAM) {
+        lista->alunos[lista->ultimo] = aluno;
+        lista->ultimo++;
+        std::cout << "Aluno inserido com sucesso!" << std::endl;
+    } else {
+        std::cout << "Erro: Lista cheia!" << std::endl;
+    }
+}
+
+void RemoveAluno(std::string nome, ListaAlunos* lista) {
+    int posicao = -1;
+    for (int i = 0; i < lista->ultimo; i++) {
+        if (lista->alunos[i].nome == nome) {
+            posicao = i;
+            break;
+        }
+    }
+    
+    if (posicao != -1) {
+        for (int i = posicao; i < lista->ultimo - 1; i++) {
+            lista->alunos[i] = lista->alunos[i + 1];
+        }
+        lista->ultimo--;
+        std::cout << "Aluno removido com sucesso!" << std::endl;
+    } else {
+        std::cout << "Erro: Aluno nao encontrado!" << std::endl;
+    }
+}
+
+int BuscaAluno(ListaAlunos lista, std::string nome) {
+    for (int i = 0; i < lista.ultimo; i++) {
+        if (lista.alunos[i].nome == nome) {
+            return i;
+        }
+    }
+    return -1;
+}
+
+void ImprimeLista(ListaAlunos lista) {
+    if (lista.ultimo == 0) {
+        std::cout << "Lista vazia!" << std::endl;
+    } else {
+        std::cout << "Alunos cadastrados:" << std::endl;
+        for (int i = 0; i < lista.ultimo; i++) {
+            std::cout << i + 1 << ". " << lista.alunos[i].nome << std::endl;
+        }
+    }
+}
+
+void LimparBuffer() {
+    std::cin.clear();
+    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+}
+
+int main() {
+    ListaAlunos lista;
+    InicializaLista(&lista);
+    int opcao;
+    std::string nome;
+    
+    do {
+        std::cout << "\n1 - Inserir Aluno" << std::endl;
+        std::cout << "2 - Remover Aluno" << std::endl;
+        std::cout << "3 - Buscar Aluno" << std::endl;
+        std::cout << "4 - Listar Alunos" << std::endl;
+        std::cout << "0 - Sair" << std::endl;
+        std::cout << "Escolha uma opcao: ";
+        std::cin >> opcao;
+        
+        LimparBuffer();
+        
+        switch(opcao) {
+            case 1: {
+                Aluno novoAluno;
+                std::cout << "Digite o nome do aluno: ";
+                std::getline(std::cin, novoAluno.nome);
+                InsereAluno(novoAluno, &lista);
+                break;
+            }
+            case 2: {
+                std::cout << "Digite o nome do aluno a ser removido: ";
+                std::getline(std::cin, nome);
+                RemoveAluno(nome, &lista);
+                break;
+            }
+            case 3: {
+                std::cout << "Digite o nome do aluno a ser buscado: ";
+                std::getline(std::cin, nome);
+                int indice = BuscaAluno(lista, nome);
+                if (indice != -1) {
+                    std::cout << "Aluno encontrado na posição: " << indice + 1 << std::endl;
+                } else {
+                    std::cout << "Aluno não encontrado!" << std::endl;
+                }
+                break;
+            }
+            case 4: {
+                ImprimeLista(lista);
+                break;
+            }
+            case 0:
+                std::cout << "Saindo..." << std::endl;
+                break;
+            default:
+                std::cout << "Opção inválida! Tente novamente." << std::endl;
+                break;
+        }
+    } while (opcao != 0);
+    
+    return 0;
+}
+
