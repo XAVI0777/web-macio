@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   
+   .container{
+    width: 60%;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid blue;
+    border-radius: 8px;
+    background-color: aliceblue;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    
+    }
+
+   h1{
+    text-align: center;
+    color: blue;
+   }
+
+   p{
+    font-size: 50px;
+    color: aqua;
+    text-align: center;
+   }
+
+   .item{
+    background-color: aquamarine;
+    color: black;
+    padding: 20px;
+    margin: 10PX;
+    flex: 1 1 200px;
+    text-align: center;
+    border-radius: 8px;
+}    
+</style>
+<body>
+    <h1>Primeiro container</h1>
+   <p> Esse é meu primeiro container</p>
+
+
+    <div class="container">
+<div class="item">home</div>
+<div class="item">Cadastro</div>
+<div class="item">ajuda</div>
+
+</div>    
+</body>
+</html>
+
+    
