@@ -1,0 +1,140 @@
+Criar um site simples de agendamento de cortes de cabelo usando HTML e JavaScript é um ótimo projeto! Aqui está um exemplo básico de como você pode estruturar isso.
+
+### Estrutura do Projeto
+
+1. **HTML**: Para criar a interface do usuário.
+2. **CSS**: Para estilizar o site.
+3. **JavaScript**: Para gerenciar a lógica de agendamento.
+
+### Exemplo de Código
+
+#### index.html
+
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Cortes de Cabelo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Agendamento de Cortes de Cabelo</h1>
+        <form id="appointment-form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" required>
+
+            <label for="date">Data:</label>
+            <input type="date" id="date" required>
+
+            <label for="time">Hora:</label>
+            <input type="time" id="time" required>
+
+            <button type="submit">Agendar</button>
+        </form>
+
+        <div id="confirmation" class="hidden"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+```
+
+#### styles.css
+
+```css
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    margin-top: 10px;
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.hidden {
+    display: none;
+}
+```
+
+#### script.js
+
+```javascript
+document.getElementById('appointment-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const date = document.getElementById('date').value;
+    const time = document.getElementById('time').value;
+
+    const confirmation = document.getElementById('confirmation');
+    confirmation.classList.remove('hidden');
+    confirmation.innerHTML = `<p>Agendamento confirmado!</p>
+                              <p>Nome: ${name}</p>
+                              <p>Data: ${date}</p>
+                              <p>Hora: ${time}</p>`;
+
+    // Limpa o formulário
+    document.getElementById('appointment-form').reset();
+});
+```
+
+### Como Funciona
+
+1. **HTML**: O formulário coleta o nome, data e hora do agendamento.
+2. **CSS**: Estiliza o formulário para ficar mais apresentável.
+3. **JavaScript**: Manipula o evento de envio do formulário, mostra uma mensagem de confirmação e limpa o formulário.
+
+### Como Executar
+
+1. Crie três arquivos: `index.html`, `styles.css` e `script.js`.
+2. Copie o código correspondente para cada arquivo.
+3. Abra o `index.html` em um navegador.
+
+### Melhorias Possíveis
+
+- Adicionar validação de dados.
+- Armazenar os agendamentos em um banco de dados (usando uma backend, como Node.js).
+- Implementar um calendário para selecionar datas.
+- Criar um sistema de login para usuários.
+
+Isso deve te dar uma boa base para começar! Se precisar de mais ajuda, é só avisar.
