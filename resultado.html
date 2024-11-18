@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1> Dados enviados</h1>
+   <b>Nome:</b><span id="nome"></span><br><br> 
+   <b>E-mail:</b><span id="email"></span><br><br>
+   <a href="index.html">voltar ao formulario</a>
+   
+</body>
+<script>
+    const params = new URLSearchParams(window.location.search);
+    const nome = params.get("nome");
+    const email = params.get("email");
+    document.getElementById("nome").textContent = nome || "nome";
+    document.getElementById("email").textContent = email || "email";
+
+
+    </script>
+</html>
