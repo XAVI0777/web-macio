@@ -1,0 +1,49 @@
+<?php
+
+
+// $name = $_POST['name'];
+// echo "------------------------".$name;
+
+
+// Conexão com o banco de dados
+$host = 'localhost';
+$dbname = 'barberia_do_banco';
+$username = 'root';  // Substitua com seu nome de usuário do banco de dados
+$password = '123456';      // Substitua com sua senha do banco de dados
+
+try {
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    die("Erro ao conectar ao banco de dados: " . $e->getMessage());
+}
+
+// Variáveis para mensagens
+$successMessage = '';
+$errorMessage = '';
+
+// Processamento do formulário
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    // Receber os dados do formulário
+    $nome_cliente = $_POST['name'];
+    $data = $_POST['date'];
+    $hora = $_POST['time'];
+    $name = $_POST['name'];
+    echo "------------------------".$name;
+
+    // Combina data e hora para formato DATETIME
+    $data_hora = $data . ' ' . $hora;
+
+    try {
+        // Inserção no banco de dados
+        $stmt = $pdo->prepare("INSERT INTO agendamentos (nome_cliente, data_hora) VALUES (?, ?)");
+        $stmt->execute([$nome_cliente, $data_hora]);
+        
+        // Mensagem de sucesso
+        $successMessage = "Agendamento realizado com sucesso!";
+    } catch (PDOException $e) {
+        // Mensagem de erro
+        $errorMessage = "Erro ao realizar o agendamento: " . $e->getMessage();
+    }
+}
+?>
