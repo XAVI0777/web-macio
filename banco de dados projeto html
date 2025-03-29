@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Cortes de Cabelo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Agendamento de Cortes de Cabelo</h1>
+        
+        <!-- Exibindo mensagens de sucesso ou erro -->
+        <?php if ($successMessage): ?>
+            <div class="success"><?php echo $successMessage; ?></div>
+        <?php endif; ?>
+        <?php if ($errorMessage): ?>
+            <div class="error"><?php echo $errorMessage; ?></div>
+        <?php endif; ?>
+
+        <!-- Formulário de Agendamento -->
+        <form id="appointment-form" method="POST" action="index.php">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="date">Data:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Hora:</label>
+            <input type="time" id="time" name="time" required>
+
+            <button type="submit">Agendar</button>
+        </form>
+
+        <div id="confirmation" class="hidden"></div>
+    </div>
+</body>
+</html>
